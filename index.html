@@ -1,0 +1,300 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>LifeCare</h1>
+            </div>
+            <i id="bar" class="fa-solid fa-bars"></i>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#doctors">Doctor's</a></li>
+                <li><a href="#speciality">Speciality's</a></li>
+                <li><a href="#patient">Patient Review's</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#About us">About Us</a></li>
+                 <li><a href="#RATE US">RATE US</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="main">
+           <div class="mainText">
+            <h1>The Hospital that <br>Care for you</h1>
+            <h3>Best Team's</h3>
+           </div>
+           <img src="mains.png" alt="">
+        </div>
+
+         
+        <div id="doctors">
+            <div class="head">
+                <h1>Our Doctor's</h1>
+            </div>
+            <div class="doctors">
+                <div class="card">
+                    <img src="dt1.jpg" alt="">
+                    <p>Dr Aparna Tripathi </p>
+                    <p> Spine Surgeon </p>
+
+                </div>
+                <div class="card">
+                    <img src="dt2.jpg" alt="">
+                    <p>Dr Priya Aggarwal</p>
+                    <p> Knee and Tendon Surgeon</p>
+
+                </div>
+                <div class="card">
+                    <img src="dt3.jpg" alt="">
+                    <p>Dr Saurabh Aggarwal</p>
+                    <p> Orthopedic Surgeon</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="speciality">
+            <div class="head">
+                <h1>Our Speciality</h1>
+            </div>
+            <div class="surgery">
+                <div class="surgeryCard">
+                    <img src="s1.png" alt="">
+                    <p>Succesfully Orthopadic Surgery</p>
+                </div>
+                <div class="surgeryCard">
+                    <img src="s2.png" alt="">
+                    <p>Succesfully Knee Surgery</p>
+                </div>
+                <div class="surgeryCard">
+                    <img src="s3.png" alt="">
+                    <p>Succesfully Tendon Surgery</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="patient">
+            <div class="head">
+                <h1>Our Patient's Review</h1>
+            </div>
+            <div class="patients">
+                <div class="patientCard">
+                    <img src="p1.png" alt="">
+                    <img src="p2.png" alt="">
+
+                </div>
+                <div class="patientCard">
+                    <img src="p3.jpg" alt="">
+                    <img src="p4.jpg" alt="">
+                     
+
+                      
+                </div>
+                <div class="patientCard">
+                    <img src="p5.jpg" alt="">  
+                    <img src="p6.jpg" alt="">                   
+                   
+                </div>
+            </div>
+        </div>
+        <div id="RATE US">
+            <div class="head">
+                
+            </div>
+        <button><h1 style="color: #050101;"><div class="center">RATE US</div></h1></button>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rate Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: hsl(0, 77%, 5%);
+      margin-bottom: 20px;
+    }
+
+    .stars {
+      display: inline-block;
+    }
+
+    .star {
+      font-size: 50px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .star:hover,
+    .star.hovered,
+    .star.selected {
+      color: gold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rate Us</h1>
+  <div class="stars" id="starContainer">
+    <span class="star" data-rating="1">&#9733;</span>
+    <span class="star" data-rating="2">&#9733;</span>
+    <span class="star" data-rating="3">&#9733;</span>
+    <span class="star" data-rating="4">&#9733;</span>
+    <span class="star" data-rating="5">&#9733;</span>
+  </div>
+
+  <br>
+  <button onclick="submitRating()">Submit</button>
+
+  <div id="message"></div>
+
+  <script>
+    const stars = document.querySelectorAll('.star');
+    let selectedRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('mouseover', () => {
+        highlightStars(star.dataset.rating);
+      });
+
+      star.addEventListener('mouseout', () => {
+        highlightStars(selectedRating);
+      });
+
+      star.addEventListener('click', () => {
+        selectedRating = star.dataset.rating;
+        highlightStars(selectedRating);
+      });
+    });
+
+    function highlightStars(rating) {
+      stars.forEach(star => {
+        if (star.dataset.rating <= rating) {
+          star.classList.add('selected');
+        } else {
+          star.classList.remove('selected');
+        }
+      });
+    }
+
+    function submitRating() {
+      if (selectedRating === 0) {
+        document.getElementById('message').textContent = "Please select a rating before submitting.";
+        document.getElementById('message').style.color = "red";
+      } else {
+        document.getElementById('message').textContent = `Thanks for rating us ${selectedRating} star(s)!`;
+        document.getElementById('message').style.color = "green";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+        <div id="contact">
+            <div class="head">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+            <div class="contact">
+                <h1>Connect With Us</h1>
+                 <input type="text" placeholder="Enter full name" id="name">
+                 <input type="text" placeholder="Enter contact number" id="number">
+                 <input type="text" placeholder="Enter address" id="address">
+                <input type="text" placeholder="Enter gender" id="gender">
+                 <input type="text" placeholder="Enter email id" id="email">
+                <input type="text" placeholder="Enter your problem" id="problem">
+                <button id="connectBtn">submit</button>
+
+            </div>
+        </div>
+         <div id="About us">
+            <div class="head">
+             <h3>About us </h3>   
+            </div>
+            <div class="About us">
+        <div class="footer">
+            <div class="text">
+                <h3>Services</h3>
+                <p>24x7 available</p>
+                <p>Top Qualified Doctors</p>
+                <p>Best Care, Best hygine</p>
+                <p>Free Ambulance</p>
+
+            </div>
+            <div class="text">
+                <h3>Speciality</h3>
+                <p>Spine Surgery</p>
+                <p>Knee Surgery</p>
+                <p>Orthopadic Surgery</p>
+                <p>Tendon Surgery</p>
+
+            </div>
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Doctor</p>
+                <p>Nursing</p>
+                <p>Staff</p>
+
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>Near Gomti Nagar</p>
+                <p>Lucknow</p>
+                <p>Pincode:282627</p>
+                <p>Mobile Number:01415223052</p>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <button id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="contentDetail">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+ </body>
+ </html>
